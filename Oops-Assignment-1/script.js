@@ -14,7 +14,6 @@
 
 obj.login(); */
 
-
 // 	2.	Imagine you now have 5 users.
 // First, think how you would manage them without using a class.
 // Then convert the same logic using a class and observe
@@ -58,7 +57,7 @@ console.log(User1.name);
     and make code modular  
 */
 
-// 	3.	Create a product object that stores name and 
+// 	3.	Create a product object that stores name and
 // price and has a method which returns the final price after discount.
 
 /* let product  = {
@@ -73,7 +72,6 @@ console.log(User1.name);
 console.log(product.discount()); */
 
 // The goal of this section is to understand why keeping data and behavior together makes code easier to manage.
- 
 
 // SECTION 2: Classes and Objects
 // 	4.	Create a Car class with the following:
@@ -92,7 +90,6 @@ console.log(product.discount()); */
 
     let c1 = new car(200, "hundai");
     console.log(c1.drive()); */
-    
 
 // 	5.	Create two different car objects from the
 //  same class and verify that their data is different.
@@ -119,7 +116,6 @@ console.log(product.discount()); */
 will to long and that code takes much memory also the code is not 
 readable. */
 
-
 // SECTION 3: Constructor and Initialization
 // 	7.	Create a class named BankAccount.
 // Its constructor should accept accountHolderName and balance.
@@ -128,7 +124,6 @@ readable. */
 // Create two bank accounts and deposit money into only one.
 // Observe and explain why the second account is not affected.
 // Inside the constructor, store both values using this.
-
 
 /* class BankAccount {
     constructor(accountHolderName, balance) {
@@ -148,16 +143,37 @@ account1.deposit(69);
 
 console.log(account1.balance); */
 
+// SECTION 4: Constructor Functions and Prototypes
+// 	10.	Create a User constructor function (do not use class syntax).
+// 	Add a login method in two ways:
+// First, inside the constructor
+// Then, move the method to the prototype
+// Create two User objects and compare their login
+// methods using equality.
+// Explain why the result is true or false.
 
+// The purpose here is to understand how prototypes help share behavior efficiently.
 
+/* function user1() {
+  this.login = function () {
+    console.log("Logged in");
+  };
+}
 
+let u1 = new user1();
+let u2 = new user1();
 
+console.log(u1.login === u2.login); //false
 
+function user2() {
+  user2.prototype.login = function () {
+    console.log("logged in");
+  };
+}
 
+let u3 = new user2();
+let u4 = new user2();
 
-
-
-
-
+console.log(u3.login === u4.login); //true */
 
 
