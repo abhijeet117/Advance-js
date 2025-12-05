@@ -93,11 +93,32 @@ classs will save our memory, also makes our code
 readeable , classes make our code modular. */
 
 
+// SECTION 3: Constructor and Initialization
+// 	7.	Create a class named BankAccount.
+// Its constructor should accept accountHolderName and balance.
+// 	8.	Inside the constructor, store both values using this.
+// 	9.	Add a method deposit(amount) that increases the balance.
+// 	10.	Create two bank accounts and deposit money into only one.
+// Observe and explain why the second account is not affected.
 
 
+/* class BankAccount {
+    constructor(accountHolderName, balance) {
+        this.accountHolderName = accountHolderName;
+        this.balance = balance;
+    }
 
+    deposit(val) {
+        return this.balance += val;
+    }
+}
 
+let account1 = new BankAccount("Abhijeet", 100000000000000);
+let account2 = new BankAccount("Raju", 100000000000000);
 
+account1.deposit(69);
+
+console.log(account1.balance);  */
 
 
 
