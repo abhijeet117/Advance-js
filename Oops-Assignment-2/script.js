@@ -53,6 +53,45 @@ ram and for that we will mess up everything. */
 
 
 
+// SECTION 2: Classes and Objects (Reinforcement)
+// 	4.	Create a class named Employee that stores:
+// name
+// salary
+
+// Add a method showDetails that prints name and salary.
+// 	5.	Create three employee objects from the same class 
+// and verify that modifying one employee does not affect the others.
+// 	6.	Explain in your own words:
+// Why is class considered a better option than 
+// writing similar objects again and again?
+
+/* class Employee {
+	constructor(name, salary){
+		this.name = name;
+		this.salary = salary;
+	}
+
+	showDetails = function() {
+		return this.name + " - " + this.salary
+	}
+}
+
+let Employee1 = new Employee("harsh", 5000);
+let Employee2 = new Employee("raju", 15000);
+let Employee3 = new Employee("anurag", 1000);
+
+Employee1.name = "dilo";  // this will not affect any other.
+
+console.log(Employee1.showDetails());
+console.log(Employee2.showDetails());
+console.log(Employee3.showDetails()); */
+
+/* because it will save our time to write many object 
+we simply create a blueprint and it will automatically 
+create new objects using this .
+classs will save our memory, also makes our code 
+readeable , classes make our code modular. */
+
 
 
 
