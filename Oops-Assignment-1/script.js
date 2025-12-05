@@ -38,7 +38,7 @@ let user5 = {
 
 class User {
     constructor (name){
-        this.name = name;
+        (this.name = name;)
     }
 }
 
@@ -176,4 +176,29 @@ let u4 = new user2();
 
 console.log(u3.login === u4.login); //true */
 
+// SECTION 5: call, apply, bind
+// 	13.	Create a function that prints this.name.
+// 	14.	Create an object that contains a name property.
 
+// Use call to run the function using the object
+// Use apply to run the function using the object
+// Use bind to create a new function and then call it
+// 	15.	Borrow a method from one object and run it for another object using call.
+
+/* function naam(name, a, b, c, d) {
+  console.log(
+    (this.name = name),
+    (this.a = a),
+    (this.b = b),
+    (this.c = c),
+    (this.d = d)
+  ); //Getting the value
+
+  console.log(this); //Getting the object
+}
+
+let obj = {};
+
+naam.apply(obj, ["abhijeet", "s", "a", 2, 2]); */
+
+// The goal is to un"d"erstand how this can be manually controlled.
