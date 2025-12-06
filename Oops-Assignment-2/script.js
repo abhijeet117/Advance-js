@@ -120,6 +120,32 @@ account1.deposit(69);
 
 console.log(account1.balance);  */
 
+// SECTION 4: Understanding this (Very Important)
+// 	11.	Create an object named profile with a property 
+// 	username and a method printName that logs this.username.
+// 	12.	Call the method normally and observe the output.
+// 	13.	Store the method in a separate variable and call it.
+// Observe what happens to this and explain why.
+// 	14.	Modify the code so that this works correctly again.
+
+/* let profile = {
+	username: "abhi",
+
+	printName: function() {
+		console.log(this.username)
+	},
+}
+
+profile.printName(); // working perfectly */
+
+/* let abc = profile.printName; // storing the function in variable
+console.log(abc) // we get the entire function
+abc() // we get undefined because the value of this is now lost 
+
+let abcd = profile.printName.bind(profile);
+abcd(); // i am using bind to storing in variable so the value of this will not lost. */
+
+
 
 
 
