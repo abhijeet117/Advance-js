@@ -185,14 +185,62 @@ console.log(p1); // when we open prototype of p1 we get our call method. */
    approch is creating methods outside constuctor or in prototype.  */
 
 
+// SECTION 6: call Method Practice
+// 	19.	Create a function showBrand that prints this.brand.
+// 	20.	Create two different objects with brand values.
+// 	21.	Use call to execute showBrand for both objects.
+// 	22.	Explain what problem call is solving here.
+
+/* function showBrand(brand) {
+	console.log(this.brand)
+
+}
+
+let obj1 = {
+	brand: "samsung",
+}
+
+let obj2 = {
+	brand: "vivo",
+}
 
 
+showBrand.call(obj1);
+showBrand.call(obj2); */
+
+/*
+	Explanation: we cannot directly call showBrand function because
+   	this.brand dont know which object is refer here call() comes
+    and solve call tell the function that this object obj1 
+	so the function finds the valu in that object and give the result.
+*/
 
 
+//  SECTION 7: apply Method Practice
+// 	23.	Create a function introduce that accepts
+//  two arguments: city and role, and prints name, city, 
+//  and role using this.name.
+// 	24.	Create an object with a name property.
+// 	25.	Use apply to call introduce using the object and an array of arguments.
+// 	26.	Explain in simple words how apply differs from call.
 
 
+/* function introduce(city, role) {
+	console.log(this.name, city , role );
+	
+}
 
+let obj = {
+	name: "Abhijeet",
+}
 
+introduce.apply(obj,["pune", "abhi"]); */
+
+/* 
+	Explanation: This code is almost same as call() only one thing that 
+	we are passing values in parameter in a form of array this.name is refer 
+	to obj we get our value.
+*/
 
 
 
