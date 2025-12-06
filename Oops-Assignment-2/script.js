@@ -243,10 +243,43 @@ introduce.apply(obj,["pune", "abhi"]); */
 */
 
 
+// SECTION 8: bind Method Practice
+// 	27.	Create a function greet that prints
+//      “Hello” followed by this.name.
+// 	28.	Bind this function to an object and
+//      store the returned function in a variable.
+// 	29.	Call the bound function later and observe the output.
+// 	30.	Explain why bind is useful when functions are 
+//      executed later or inside callbacks.
 
+/* function greet() {
+	console.log(this.name)
+}
 
+let obj = {
+	name: "Hello"
+}
 
+let bound = greet.bind(obj);
 
+bound(); */
+
+/* 
+	Explanation: bind is ud=seful in many places like settimeout
+	 or when we have to use our code later but the problem is
+	  the value of this will lost here so the bind() will 
+	  permanently add this to that obj and our value will
+	   not lost and we get our output.
+*/
+
+/* The bind method is useful in situations like setTimeout 
+or whenever a function is executed later. Normally, when a 
+function runs in such cases, the value of `this` can be lost
+ or changed. Using bind() fixes this problem by permanently 
+ attaching the correct `this` value to the function. As a result,
+  even if the function is called later, it still uses the right
+   object and gives the expected output.
+ */
 
 
 
