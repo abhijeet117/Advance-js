@@ -146,8 +146,43 @@ let abcd = profile.printName.bind(profile);
 abcd(); // i am using bind to storing in variable so the value of this will not lost. */
 
 
+// SECTION 5: Constructor Function and Prototype
+// 	15.	Create a constructor function called Vehicle
+//  that accepts type and wheels.
+// 	16.	Add a method describe inside the constructor and observe
+//  memory behavior when multiple objects are created.
+// 	17.	Move the same method to Vehicle.prototype and repeat the test.
+// 	18.	Explain why the prototype approach is preferred.
 
 
+/* class Vehicle {
+	constructor(type, wheel) {
+		this.type = type;
+		this.wheel = wheel;
+		// function describe(){} Every intances will get new method
+	}
+
+	describe(){
+		
+	} // added in prototype
+}
+
+Vehicle.prototype.call = function() {
+	console.log(this.type + " " + this.wheel);
+}
+
+let p1 = new Vehicle("ob1", "ob2");
+let p2 = new Vehicle("ob3", "ob4");
+
+console.log(p1); // when we open prototype of p1 we get our call method. */
+
+/* Explanation: When we create a method inside constructor every time 
+   we create new intance of class using new vehicle a new method will 
+   will create and it will take much memory 
+   
+   but when we use method outside the constructor it will goes in shared
+   memory and we never create same method again and again so the better 
+   approch is creating methods outside constuctor or in prototype.  */
 
 
 
