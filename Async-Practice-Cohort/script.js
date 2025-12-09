@@ -31,4 +31,53 @@ afterDelay(1000, function(data) {
     console.log(data.callback)
 }); */
 
+// ## Exercise 2 — Intermediate (Data flow)
+
+// **Task (Hindi):** Ek function banao `getUser`
+
+// **Requirements:**
+// - `getUser` `username` lega
+// - 1 second ke baad `callback` ko ek object de:
+//   - `id`
+//   - `username`
+
+// **Then:**
+// - Callback ke andar ek aur function call karo `getUserPosts`
+
+// **`getUserPosts` requirements:**
+// - `userId` lega
+// - 1 second ke baad `callback` ko `posts` ka array de
+
+// **Final output:**
+// - User ka `username` print ho
+// - Fir uske `posts` print ho
+
+// **Goal:**
+// - Samajhna ki ek async ka result next async ko kaise milta hai
+// - Callback chaining practice
+
+
+/* function getUser(username, cb) {
+    console.log("Getting Username...");
+    setTimeout(function() {
+        cb({id: 221, username: username});
+    }, 3000)
+
+}
+
+function getUserposts(userid , cb) {
+    console.log("Getting User posts...");
+    setTimeout(function() {
+        cb(["post 1", "post"]);
+    },2000);
+}
+
+getUser("@abhijeet",function(user) {
+    console.log("Username is", user.username);
+
+    getUserposts(user.id, function(post) {
+        console.log(post);
+    });
+}); */
+
 
