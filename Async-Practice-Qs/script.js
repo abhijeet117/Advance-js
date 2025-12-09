@@ -204,7 +204,7 @@ chooseFood(function(){
 // withdrawCash
 // Callback chain bana kar output print karna.
 
-function insertCard(cb) {
+/* function insertCard(cb) {
   console.log("inserting card...");
   setTimeout(function() {
     cb()
@@ -239,3 +239,127 @@ insertCard(function() {
     });
   });
 });
+ */
+
+// 🔴 HARD LEVEL (8–10)
+// 8️⃣ Build a Pyramid of Callbacks
+
+// 3-4 nested levels ke sath callback hell ka “pyramid shape” create karo:
+
+// Start
+//  Level 1
+//   Level 2
+//    Level 3
+// End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
