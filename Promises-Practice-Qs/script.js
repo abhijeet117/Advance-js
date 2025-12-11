@@ -69,6 +69,28 @@ getUser()
     console.log("All Conditions are now fullfilled!");
   }); */
 
+// 3. write a function fakeApiCall (endpoint)
+//  that accept a string like "users" or "posts"
+//  resolves with some dummy data after a random delay ( 1-3 sec).
 
+/* function fakeApiCall(endpoint) {
+  let data = {
+    user: ["abhijeet", "Shubham"],
+    posts: ["post1", "post2"],
+  };
 
+  let delay = Math.floor(Math.random() * 2000 + 1000);
+  return new Promise(function (res, rej) {
+    setTimeout(() => {
+      res(data[endpoint]);
+    }, delay);
+  });
+}
 
+fakeApiCall("user").then(function (data) {
+  console.log(data);
+});
+
+fakeApiCall("posts").then(function (data) {
+  console.log(data);
+}); */
